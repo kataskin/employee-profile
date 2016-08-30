@@ -1,0 +1,85 @@
+.tech-skills
+  padding-top 14px
+
+.tech-skills__title
+  margin-bottom 8px
+  font-size 22px
+  line-height 28px
+  color #2f1b15
+  font-weight 700
+
+.tech-skills__comment
+  position relative
+  margin 8px 0 16px 18px
+  font-size 14px
+  line-height 22px
+  color #3d3d3d
+  font-weight 400
+
+  &::before
+    content '*'
+    position absolute
+    top 0
+    left -18px
+    font-size 36px
+    line-height 40px
+    color #3d3d3d
+    font-weight 400
+
+.tech-skills__list
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  align-content space-around
+  list-style none
+  margin 0 0 0 20px
+  padding 0
+
+  @media (min-width: 580px)
+    height 360px
+    margin-left 0
+
+  @media (min-width: 800px)
+    align-content space-between
+    max-width 752px
+    height 260px
+
+.tech-skills__item
+  margin 5px 0
+
+  &:first-child
+    margin-right 41px
+
+.tech-skills__input
+  display none
+
+.tech-skills__name
+  position relative
+  display block
+  max-width 230px
+  padding-left 28px
+  font-size 21px
+  line-height 25px
+  color #000000
+  font-weight 700
+
+  &::before
+    content ''
+    position absolute
+    top 5px
+    left 0
+    width 18px
+    height 18px
+    background url('../img/icon-checkbox.png') center center no-repeat
+
+  .tech-skills__input:checked + &::after
+    content ''
+    position absolute
+    top -3px
+    left 0
+    width 23px
+    height 23px
+    background url('../img/icon-checkbox-ok.png') center center no-repeat
+
+  &:hover
+    cursor pointer

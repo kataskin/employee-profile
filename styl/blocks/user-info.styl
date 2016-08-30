@@ -1,0 +1,89 @@
+.user-info__item
+  display flex
+  flex-direction column
+  width 100%
+  margin-bottom 25px
+  overflow hidden
+
+  @media (min-width: 560px)
+    flex-direction row
+    align-items flex-end
+    margin-bottom 10px
+
+.usre-info__item-key
+  margin-right 17px
+  font-size 22px
+  line-height 28px
+  color #2f1b15
+  font-weight 700
+  white-space nowrap
+
+.user-info__item-value
+  flex-grow 1
+  min-width 0
+  padding 8px 14px
+  border none
+  outline none
+  font-family 'Courier New', serif
+  font-size 30px
+  line-height 36px
+  color #231f20
+  background url('../img/line.png') bottom -7px left no-repeat
+
+.user-info__html-courses
+  display inline-block
+  margin 35px 7px 0 0
+  font-size 22px
+  line-height 28px
+  color #2f1b15
+  font-weight 700
+
+.user-info__html-courses-link
+  margin-right 14px
+  font-size 22px
+  line-height 28px
+  color #014f98
+  font-weight 700
+
+.user-info__courses-input-wrapper
+  margin 20px 0 0
+
+  @media (min-width: 380px)
+    display inline
+
+.user-info__html-courses-input
+  display none
+
+.user-info__html-courses-label
+  position relative
+  top 2px
+  margin-left 18px
+  padding-left 38px
+  font-size 22px
+  line-height 26px
+  color #2f1b15
+  font-weight 700
+
+  &::before
+    content ''
+    position absolute
+    top -6px
+    left -3px
+    width 41px
+    height 41px
+    background url('../img/icon-radio.png') center center no-repeat
+
+  .user-info__html-courses-input:checked + &::after
+    content ''
+    position absolute
+    top 7px
+    left 6px
+    width 23px
+    height 23px
+    background url('../img/icon-radio-ok.png') center center no-repeat
+
+  &:hover
+    cursor pointer
+
+  .user-info__html-courses-input:checked + &
+    cursor default
